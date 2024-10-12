@@ -1,15 +1,21 @@
+import React from 'react';
 import logo from './logo.svg';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import Navbar from './Navbar';
+import Converter from './Converter';
+import ExchangeRates from './ExchangeRates';
+import Footer from './Footer';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-      <a href="https://www.flaticon.com/free-stickers/under-construction" title="under construction stickers">Under construction stickers created by Design Circle - Flaticon</a>
-        <p>
-         Currency Converter Comiing Soon!
-        </p>
-      </header>
+    <div>
+      <Navbar />
+      <Converter />
+      <ExchangeRates />
+      <Footer />
     </div>
   );
 }
