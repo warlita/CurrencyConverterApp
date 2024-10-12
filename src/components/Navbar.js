@@ -2,9 +2,9 @@ import React from 'react';
 
 function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <nav className="navbar navbar-expand-lg navbar-light pink-light">
       <div className="container-fluid d-flex justify-content-center">
-        <a className="navbar-brand" href="#">My Currency Converter</a>
+        <h1>My Currency Converter</h1>
         <button
           className="navbar-toggler"
           type="button"

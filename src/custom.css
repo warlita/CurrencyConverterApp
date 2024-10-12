@@ -1,0 +1,14 @@
+.pink-light {
+  background-color: #ffccdc; 
+  color: #000; /* text color */
+}
+
+.pink {
+  background-color: #ff69b4; 
+  color: #fff; /* text color */
+}
+
+.pink-dark {
+  background-color: #d5006d; 
+  color: #fff; /* text color */
+}
