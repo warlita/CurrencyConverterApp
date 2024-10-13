@@ -6,13 +6,14 @@ function Converter() {
   const [baseCurrency, setBaseCurrency] = useState('USD'); // THIS is the base currency that we can set to USD
   const [currency, setCurrency] = useState('EUR'); //this is the base TARGET currency we are converting to
   const [convertedAmount, setConvertedAmount] = useState(null); // To display the SUCCESSFUL converted value
-  const [errorMessage, setErrorMessage] = useState(''); // To handle errors
+  const [errorMessage, setErrorMessage] = useState(''); 
 
   //Exchange Rate List functionality
   const fetchExchangeRates = async (base) => {
     try {
       const response = await fetch(`https://api.frankfurter.app/latest?from=USD`);
       const data = await response.json();
+      return data.rates;
     } catch (error) {
       setErrorMessage('Error fetching exchange rates. Please try again.');
     }
@@ -65,7 +66,7 @@ function Converter() {
   };
 
   return (
-    <div className="container d-flex flex-column align-items-center pink">
+    <div className="d-flex flex-column align-items-center pink">
       <input
         type="number"
         value={amount}
